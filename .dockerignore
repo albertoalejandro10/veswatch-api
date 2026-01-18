@@ -1,6 +1,8 @@
 # Binaries (exclude built binaries but not source directories)
 /veswatch
 /server
+!cmd/
+!internal/
 *.exe
 *.exe~
 *.dll

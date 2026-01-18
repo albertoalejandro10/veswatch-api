@@ -1,6 +1,6 @@
-# Binaries
-veswatch
-server
+# Binaries (only at root level)
+/veswatch
+/server
 *.exe
 *.exe~
 *.dll
