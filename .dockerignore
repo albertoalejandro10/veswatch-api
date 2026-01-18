@@ -1,0 +1,45 @@
+# Binaries (exclude built binaries but not source directories)
+/veswatch
+/server
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Go workspace file
+go.work
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+/bin/
+/dist/
+
+# Local environment
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
+
+# Fly.io
+fly.toml
+
+# Debug binaries
+__debug_bin*
