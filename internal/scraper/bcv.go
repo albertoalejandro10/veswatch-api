@@ -6,8 +6,10 @@
 package scraper
 
 import (
+	"crypto/tls"
 	"fmt"
 	"log"
+	"net/http"
 	"regexp"
 	"strconv"
 	"strings"
@@ -34,6 +36,12 @@ func NewBCVScraper() *BCVScraper {
 
 	// Set timeouts
 	c.SetRequestTimeout(30 * time.Second)
+
+	// Disable TLS verification for BCV (quick fix for proxy/certificate issues)
+	c.WithTransport(&http.Transport{
+		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+	})
+	log.Printf("BCV: TLS verification disabled")
 
 	return &BCVScraper{
 		collector: c,
