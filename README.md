@@ -55,7 +55,7 @@ API information:
 
 ### Prerequisites
 
-- Go 1.24 or later
+- Go 1.23 or later
 - Git
 
 ### Running Locally
@@ -197,7 +197,7 @@ api/
 
 ## Technologies
 
-- **Go 1.24** - Latest stable Go
+- **Go 1.23** - Latest stable Go
 - **gocolly/colly** - Web scraping framework
 - **Standard library** - HTTP server, JSON encoding
 - **Docker** - Multi-stage builds
